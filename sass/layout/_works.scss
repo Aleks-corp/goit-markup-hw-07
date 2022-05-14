@@ -2,19 +2,18 @@
   padding-top: 0;
 }
 
-.works-section-list {
+.works-list {
   display: flex;
   justify-content: center;
   margin-left: -30px;
 }
-.works-section-list > .item {
+.works-list__item {
   position: relative;
   flex-basis: calc((100% - 90px) / 3);
   margin-left: var(--margin-typical);
   background-color: var(--secondary-bg-color);
 }
-
-.works-section-list .text {
+.works-list__text {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -25,15 +24,4 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-}
-
-.works-section-title,
-.command-section-title,
-.client-section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
 }

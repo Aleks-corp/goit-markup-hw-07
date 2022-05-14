@@ -1,66 +1,43 @@
-.skills-section-list {
+.skills-list {
   display: flex;
   justify-content: center;
 }
-
-.skills-section-list > .item:not(:last-child) {
+.skills-list__item:not(:last-child) {
   margin-right: var(--margin-typical);
+}
+.skills-list__item::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: var(--margin-typical);
 }
 
 /* ----------SKILL-BG-IMAGE---------- */
 
-.skills-section-list .item:nth-child(1)::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background-color: var(--secondary-bg-color);
+.skills-list__item:nth-child(1)::before {
   background-image: url(../images/logo/skills-antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: var(--margin-typical);
 }
-.skills-section-list .item:nth-child(2)::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background-color: var(--secondary-bg-color);
+.skills-list__item:nth-child(2)::before {
   background-image: url(../images/logo/skills-clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: var(--margin-typical);
 }
-.skills-section-list .item:nth-child(3)::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background-color: var(--secondary-bg-color);
+.skills-list__item:nth-child(3)::before {
   background-image: url(../images/logo/skills-diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: var(--margin-typical);
 }
-.skills-section-list .item:nth-child(4)::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background-color: var(--secondary-bg-color);
+.skills-list__item:nth-child(4)::before {
   background-image: url(../images/logo/skills-astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: var(--margin-typical);
 }
 
-.skills-section-title {
+.skills-list__title {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
-.skills-section-text {
+.skills-list__text {
   line-height: 1.71;
 }
