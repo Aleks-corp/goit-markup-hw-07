@@ -21,43 +21,42 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="page-header-nav">
-          <div class="nav-container">
-            <a href="./index.html" class="header-link logo link"
-              >Web<span class="accent">Studio</span></a
-            >
-            <ul class="site-nav list">
-              <li class="site-nav-item">
-                <a href="./index.html" class="header-link link current"
-                  >Студия</a
-                >
-              </li>
-              <li class="site-nav-item">
-                <a href="./portfolio.html" class="header-link link"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="site-nav-item">
-                <a href="#contacts" class="header-link link">Контакты</a>
-              </li>
-            </ul>
-          </div>
+        <nav class="site-nav">
+          <a href="./index.html" class="logo link"
+            >Web<span class="logo__accent--black">Studio</span></a
+          >
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link link current"
+                >Студия</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="#contacts" class="site-nav__link link">Контакты</a>
+            </li>
+          </ul>
         </nav>
-        <ul class="header-contacts list">
-          <li class="header-contacts-item">
-            <a href="mailto:info@devstudio.com" class="contact-link link"
-              ><svg class="header-icon" width="16" height="12">
+        <ul class="site-contacts list">
+          <li class="site-contacts__item">
+            <a href="mailto:info@devstudio.com" class="site-contacts__link link"
+              ><svg class="site-contacts__icon" width="16" height="12">
                 <use href="./images/logo/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="header-contacts-item">
-            <a href="tel:+380961111111" class="contact-link link"
-              ><svg class="header-icon" width="10" height="16">
+          <li class="site-contacts__item">
+            <a href="tel:+380961111111" class="site-contacts__link link"
+              ><svg class="site-contacts__icon" width="10" height="16">
                 <use href="./images/logo/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -70,11 +69,11 @@
 
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">
+          <h1 class="hero__title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="button" data-modal-open>
+          <button type="button" class="button hero__btn" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -413,8 +412,8 @@
     <footer class="page-footer">
       <div class="container">
         <div class="footer-adress-container">
-          <a href="./index.html" class="logo link"
-            >Web<span class="accent">Studio</span>
+          <a href="./index.html" class="logo page-footer__logo link"
+            >Web<span class="logo__accent--white">Studio</span>
           </a>
           <address id="contacts" class="footer-contacts">
             <ul class="footer-contacts-list list">
@@ -483,7 +482,7 @@
               placeholder="E-mail"
               required
             />
-            <button type="submit" class="subscr-btn">
+            <button type="submit" class="button subscr__btn">
               <span class="subscr-text">Подписаться</span>
               <svg class="icon" width="24" height="24">
                 <use href="./images/logo/icons.svg#icon-send"></use>
@@ -550,7 +549,7 @@
               ></span
             >
           </label>
-          <button type="submit" class="button">Отправить</button>
+          <button type="submit" class="button modal__btn">Отправить</button>
         </form>
       </div>
     </div>
